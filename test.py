@@ -1,3 +1,4 @@
-a=2
-b =2 
-a
+import nltk
+from nltk.corpus import twitter_samples
+import matplotlib.pyplot as plt
+import randoom
