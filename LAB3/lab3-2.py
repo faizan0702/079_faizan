@@ -40,6 +40,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 
 precision = precision_score(target_test , target_pred)
+
 recall = recall_score(target_test , target_pred)
 
 print("precision:{}".format(precision))
