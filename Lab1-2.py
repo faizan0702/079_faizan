@@ -29,7 +29,6 @@ print(okmatrix *2)
 print()
 # badmatrix = np.array([[1,2],[3,4],[5,6,7]])
 # print(badmatrix)
-# print(badmatrix *3)
 
 
 
