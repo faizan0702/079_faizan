@@ -39,7 +39,7 @@ Play_name_mapping = dict(zip(le.classes_ , le.transform(le.classes_)))
 print("Play mapping:",Play_name_mapping)
 
 print("\n\n")
-print("Weather:" ,Outlook_encoded)
+print("Weather:" ,Outlook_encoder)
 print("Temerature:" ,Temperature_encoded)
 print("Humidity:" ,Humidity_encoded)
 print("Wind:" ,Wind_encoded)

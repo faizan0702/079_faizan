@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="humidity0 <= 0.5\nentropy = 0.918\nsamples = 9\nvalue = [3, 6]\nclass = play", fillcolor="#9ccef2"] ;
+1 [label="outlook2 <= 0.5\nentropy = 1.0\nsamples = 6\nvalue = [3, 3]\nclass = do_not_play", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="temperature1 <= 0.5\nentropy = 0.811\nsamples = 4\nvalue = [3, 1]\nclass = do_not_play", fillcolor="#eeab7b"] ;
+1 -> 2 ;
+3 [label="wind1 <= 0.5\nentropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = do_not_play", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = do_not_play", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = play", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = do_not_play", fillcolor="#e58139"] ;
+2 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = play", fillcolor="#399de5"] ;
+1 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = play", fillcolor="#399de5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
