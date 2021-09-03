@@ -23,6 +23,7 @@ sigma = np.std(X, 0)
 #normalizing the input
 X = (X-mu) / sigma
 X = np.hstack((np.ones((Y.size,1)),X))
+print("value of x:" , X)
 print(X.shape)
 
 # Weights and biases
@@ -90,3 +91,5 @@ print("Targets:\n",Y)
 
 print("Cost after linear regression: ",cost_final)
 print("Cost reduction percentage : {} %".format(((cost_initial- cost_final)/cost_initial)*100))
+
+print(preds)
