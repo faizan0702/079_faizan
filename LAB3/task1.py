@@ -5,6 +5,7 @@ from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 data = pd.read_csv(r'C:\Users\faiza\OneDrive\Desktop\sem7\079_faizan\LAB3\PracticeDataSets\Dataset2.csv')
 print(data)
 
+# one hot
 dummy_humidity = pd.get_dummies(data['Humidity'])
 data = data.drop(['Humidity'],axis=1)
 data = pd.concat([dummy_humidity,data],axis=1)
