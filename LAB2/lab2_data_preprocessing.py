@@ -6,8 +6,6 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder
 from sklearn.impute import SimpleImputer
 import seaborn as sns
 
-# from google.colab import drive
-# drive.mount('/content/drive')
 
 dataset = pd.read_csv(r'C:\Users\faiza\OneDrive\Desktop\sem7\079_faizan\LAB2\Datasets\Exercise-CarData.csv', index_col=[0])
 print('Data : \n', dataset)
